@@ -20,22 +20,11 @@
             android:text="Cadastrar" />
 
         <Button
-            android:id="@+id/btDeletar"
+            android:id="@+id/btListar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DELETAR" />
+            android:text="LISTAR" />
 
-        <Button
-            android:id="@+id/btAtualizar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ATUALIZAR" />
-
-        <Button
-            android:id="@+id/btPesquisar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="PESQUISAR" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

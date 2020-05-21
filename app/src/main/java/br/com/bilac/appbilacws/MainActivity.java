@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
 
-    Button btCadastrar;
+    Button btCadastrar, btListar;
 
 
     @Override
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btCadastrar =  (Button) findViewById(R.id.btCadastrar);
+        btListar =  (Button) findViewById(R.id.btListar);
 
 
         btCadastrar.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent cadastroIntent = new Intent(getApplicationContext(), cadastrarActivity.class);
                 startActivity(cadastroIntent);
+
+
+
+            }
+        });
+
+        btListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                 Intent listarIntent = new Intent(getApplicationContext(), listar_cliente.class);
+                 startActivity(listarIntent);
 
 
 
